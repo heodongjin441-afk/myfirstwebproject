@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Web</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("./images/html\ 사진.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(#152331,#000000);
+            color: white;
+            border-bottom: 2px solid white;
+        }
+        .html{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            gap:10px;
+            border-bottom: 2px solid white;
+        }
+        .css{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            border-bottom: 2px solid white;
+            background-color: black;
+            color: white;
+        }
+        .js{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+        .http{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Web Development</h1>
+    <p>웹 개발을 공부하고 정리하는 공간</p>
+</header>
+
+<main>
+
+    <section class="html">
+        <h2>HTML</h2>
+
+        <article>
+            <h3>HTML이란?</h3>
+            <p>html은 웹사이트에서 기본 뼈대가 되어주는 역할입니다.</p>
+        </article>
+
+        <article>
+            <h3>HTML 기본 구조</h3>
+            head
+            body의 형식이다.
+        </article>
+
+        <article>
+            <h3>태그와 요소</h3>
+            <p>몇가시 예시로 든다면</p>
+            <p>h1태그는 제목 태그이다.</p>
+            <p>p태그는 본문 태그이다.</p>
+        </article>
+
+        <article>
+            <h3>시맨틱 태그</h3>
+            <p>시맨틱 태그는 header, main, footer로 나뉘어진다 header는 웹 사이트의 맨 위이며 main은 본문 footer는 맨 마지막에 쓰인다.</p>
+        </article>
+
+        <article>
+            <h3>form / input</h3>
+            <p>input태그는 사용자가 데이터를 보낼 때 쓰이는 태그이다.</p>
+            <p>form 태그는 사용자가 입력한 데이터를 하나의 묶음으로 만들어 서버에 보내주는 태그이다.</p>
+        </article>
+    </section>
+
+    <section class="css">
+        <h2>CSS</h2>
+
+        <article>
+            <h3>CSS란?</h3>
+            <p>웹사이트의 살과 피부가 되어주는(디자인) 역할이다.</p>
+        </article>
+
+        <article>
+            <h3>선택자</h3>
+            <p>.은 class 선택자, #은 id의 선택자이지 그리고 일반 태그 선택자는 h1{}이런 형식으로 디자인 하면 된다.</p>
+        </article>
+
+        <article>
+            <h3>Box Model</h3>
+            <p>하나의 크기와 여백 구조</p>
+            <p>content → padding → border → margin</p>
+        </article>
+
+        <article>
+            <h3>Flexbox</h3>
+            <p>여러 요소를 "어떻게 배치할지" 다루는 레이아웃이다.</p>
+        </article>
+
+        <article>
+            <h3>Grid</h3>
+            <p>사용자가 원하게 여러개의 열로 배치가 가능하며 반응형으로 자리가 부족하면 자동으로 열을 늘려주는 기능도 있다.</p>
+        </article>
+    </section>
+
+    <section class="js">
+        <h2>JavaScript</h2>
+
+        <article>
+            <h3>JavaScript란?</h3>
+            <p>웹사이트의 뇌를 담당하는 구간이다 우리가 버튼을 누르면 어느 이벤트가 나오게 하는 로직을 짜는것이 js의 예시이다.</p>
+        </article>
+
+        <article>
+            <h3>변수</h3>
+            <p>const 변수명 = 'abcd'의 형태이다, 또한 let, const 변수 선언 문에는 각각 다른 기능이 있다.</p>
+        </article>
+
+        <article>
+            <h3>조건문</h3>
+            <p>우리가 가장 많이 아는 if문이다.</p>
+        </article>
+
+        <article>
+            <h3>반복문</h3>
+            <p>for(let i =0;i&lt;100;i++)의 형식이다.</p>
+        </article>
+
+        <article>
+            <h3>함수</h3>
+        </article>
+
+        <article>
+            <h3>DOM</h3>
+        </article>
+    </section>
+
+    <section class="http">
+        <h2>HTTP</h2>
+
+        <article>
+            <h3>HTTP란?</h3>
+            <p>HTTP는 HyperText Transfer Protocol의 약자로, 웹에서 데이터를 주고받기 위한 프로토콜입니다.</p>
+        </article>
+
+        <article>
+            <h3>Request</h3>
+            <p>클라이언트가 서버에 요청을 보내는 과정입니다. 브라우저에서 URL을 입력하거나 링크를 클릭하면 요청이 발생합니다.</p>
+        </article>
+
+        <article>
+            <h3>Response</h3>
+            <p>서버가 클라이언트에게 응답을 보내는 과정입니다.</p>
+        </article>
+
+        <article>
+            <h3>GET / POST</h3>
+            <p>GET은 서버에서 데이터를 가져올 때 사용하고, POST는 서버에 데이터를 전송할 때 사용합니다.</p>
+        </article>
+
+        <article>
+            <h3>Cookie / Session</h3>
+            <p>Cookie는 클라이언트 측에 저장되는 작은 데이터 조각이며, Session은 서버 측에서 관리되는 사용자 세션 정보입니다.</p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <p>웹 개발 공부를 계속해봅시다.</p>
+    <p>© 2026 whyweb</p>
+</footer>
+</body>
+</html>

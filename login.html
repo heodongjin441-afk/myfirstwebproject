@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        button:hover{
+            color: black;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>login</h1>
+    </header>
+    <main>
+        <form action="/login" method="post">
+            <input type="text" name="user_name">
+            <input type="text" name="password">
+            <button type="submit">로그인</button>
+        </form>
+        <a href="./sign.html">회원가입</a>
+    </main>
+</body>
+</html>

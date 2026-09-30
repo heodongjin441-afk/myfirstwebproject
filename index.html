@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: linear-gradient(#d4fc79,#96e6a1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+
+    .list{
+        font-size: 65px;
+    }
+
+    .list ul {
+        display: flex;
+        gap: 60px;
+        list-style: none;
+    }
+
+    .list button{
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    .list a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .list :hover{
+        color: aqua;
+    }
+
+    .logo{
+        font-size: 100px;
+    }
+    .list{
+        justify-content: center;
+    }
+
+    main{
+        color: white;
+        height: 85vh;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        background-image: url("/images/보안이미지.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mainstart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainstart h1{
+        font-size: 100px;
+    }
+    .start{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 200px;
+        border-radius: 40px;
+        background: #164e63;
+        font-size: 40px;
+    }
+    .start:hover{
+        color: white;
+        background-color: black;
+    }
+    .recent{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .recent h1{
+        justify-content: center;
+        font-size: 40px;
+    }
+    .recent li{
+        list-style: none;
+        font-size: 40px;
+    }
+    .recent a{
+        color: white;
+        text-decoration: none;
+    }
+    .recent a:hover{
+        color: aqua;
+    }
+    .tips{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tips h1{
+        font-size: 40px;
+    }
+    .tips li{
+        font-size: 40px;
+        list-style: none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">&lt;/&gt;</div>
+        <div class="list">
+            <ul>
+                <li><a href="./security.html">보안</a></li>
+                <li><a href="./web.html">웹사이트 개발</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="sign.html">회원가입</a></li>
+                <form action="/logout" method="post">
+                <button type="submit">로그아웃</button>
+                </form>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="mainstart">
+        <h1>웹과 보안의 공간</h1>
+        <button class="start">시작하기</button>
+        </section>
+
+        <section class="recent">
+        <h1>가장 최근에 배운 것</h1>
+        <nav>
+            <li><a href="./security.html">보안</a></li>
+            <li><a href="./web.html">웹사이트</a></li>
+        </nav>
+        </section>
+
+        <section class="tips">
+            <h1>tips</h1>
+            <nav>
+                <li>뭐가 너한테 부족한지 알아라.</li>
+                <li>많이 만들지 말고 깊게 만들어라.</li>
+                <li>프로젝트 3개 함 해봐라</li>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <h3>website 전공</h3>
+        <p>개발자: whyweb</p>
+    </footer>
+</body>
+</html>
